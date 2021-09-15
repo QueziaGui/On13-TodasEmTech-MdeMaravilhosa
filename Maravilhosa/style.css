@@ -142,9 +142,8 @@ a {
 }
 
 .suaHistoria_imagem {
-    width: 80%;
-    margin-bottom: 30px;
-
+    width: 400px
+    /*margin-button: 50px;*/
 }
 
 .suaHistoria_texto{
@@ -1186,7 +1185,7 @@ a {
     }
 
     .header_maravilhosa_img{
-        width: 100%;
+        width: 60%;
         height: 350px;
         margin-bottom: 180px;
         margin-left: 8px;
@@ -1576,8 +1575,9 @@ a {
 }
 
 .suaHistoria_imagem {
-    width: 80%;
+    width: 35%;
     margin-bottom: 30px;
+    height: auto;
 
 }
 
