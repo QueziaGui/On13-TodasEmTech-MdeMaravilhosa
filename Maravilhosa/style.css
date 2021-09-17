@@ -1,8 +1,8 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 
 /* NAVBAR */
 
-.navbar{
+.navbar {
     background-color: #C083B9;
     width: 100%;
     height: 85px;
@@ -25,8 +25,6 @@ a {
 }
 
 /* -------------------------------------------------------------------------------- */
-
-
 /* HEADER */
 
 .header {
@@ -48,14 +46,14 @@ a {
 }
 
 /* .header_container_img{
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}  */
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      top: 30%;
+      left: 40%;
+  }  */
 
-.header_maravilhosa_img{
+.header_maravilhosa_img {
     width: 90%;
     height: 220px;
     margin-left: 20px;
@@ -70,11 +68,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
-
 /* --- BOTAO --- */
-  
+
 .header_button {
     display: flex;
     align-items: center;
@@ -98,12 +96,10 @@ a {
     transition: background-color .5s;
 }
 
-
-
-
 /* SECAO Maravilhosa */
+
 .maravilhosa {
-    background-color: #fad8e5;
+    background-color: #fad8e5 ;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -111,30 +107,32 @@ a {
 }
 
 .container_maravilhosa {
-    text-align: center;
+    text-align: justify;
     padding: 0 5%;
 }
 
-.maravilhosa_titulo{
+.maravilhosa_titulo {
     color: #ea4c89;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
     padding-top: 40px;
+    margin-right: 160px;
 }
 
-.maravilhosa_boxBorder{
-    border:1px solid #674582;
+.maravilhosa_boxBorder {
+    border: 1px solid #674582;
     margin: 42px;
+    text-align: justify;
 }
 
-.boxBorder_texto{
+.boxBorder_texto {
     margin: 30px;
     color: #462755;
     text-align: center;
 }
 
-.container_suaHistoria{
+.container_suaHistoria {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,25 +140,30 @@ a {
 }
 
 .suaHistoria_imagem {
-    width: 45%;
+    width: 80%;
     margin-bottom: 30px;
-
+    border-radius: 50%;
 }
 
-.suaHistoria_texto{
+.suaHistoria_texto {
     width: 100%;
+    margin: 6%;
+    font-weight: bold;
 }
 
-.suaHistoria_titulo{
+.suaHistoria_titulo {
     color: #462755;
     padding-bottom: 10px;
 }
 
-.suaHistoria_paragrafo{
+.suaHistoria_paragrafo {
     padding-bottom: 10px;
+    text-align: justify;
+    
 }
 
 /* AUTORA */
+
 .autora {
     background-color: #b6dbf1d2;
     align-items: center;
@@ -170,7 +173,7 @@ a {
     padding: 60px;
 }
 
-.autora_titulo{
+.autora_titulo {
     text-align: center;
     color: #ea4c89;
     font-size: 32px;
@@ -179,23 +182,26 @@ a {
     padding: 30px;
 }
 
-.autora_sobre{
+.autora_sobre {
     display: flex;
+    flex-direction: column;
 }
 
 .autora_imagem {
     width: 20%;
     border-radius: 50%;
     margin-right: 35px;
+    align-self: center;
 }
 
 /* FOOTER */
+
 .footer {
     background: #ea4c89;
     color: #f3f3f3;
 }
 
-.footer_menu{
+.footer_menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -211,7 +217,6 @@ a {
     list-style: none;
 }
 
-
 .footer_cc {
     background: #5B5E5E;
     display: flex;
@@ -222,17 +227,71 @@ a {
 
 /* MEDIA QUERY */
 
-@media (min-width: 768px){
+ @media (min-width: 768px){ 
     .container_header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_maravilhosa_img{
+    width: 100%;
+    height: 380px;
+    margin-bottom: 180px;
+    margin-left: 8px;
+}
+
+.header_titulo {
+    width: 30%;
+    margin: 45px 0px 120px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.suaHistoria_imagem {
+    width: 40%;
+}
+
+.container_suaHistoria{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.autora_sobre{
+    flex-direction: row;
+}
+
+.autora_imagem{
+    width: 20%;
+}
+}  
+
+@media (max-width: 781px) {
+    .container_header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    header_maravilhosa_img {
+      width: 100%;
+      height: 350px;
+      margin-left: 10px;
+      margin-bottom: 180px;
+    }
+    .maravilhosa {
+            background-color: #e780a8 ;
     }
 
-    .header_maravilhosa_img{
-        width: 100%;
-        height: 350px;
-        margin-bottom: 180px;
-        margin-left: 8px;
+    .autora {
+        background-color: #94c1dbd2;
+    }
+
+    .footer{
+        background-color: lightcoral;
+    }
+    .footer_cc {
+        background: #6e8a8a;
     }
 }
